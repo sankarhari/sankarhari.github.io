@@ -1,90 +1,179 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-     <title>Sankar Resume</title>
+    <title>Sankar Resume</title>
 
-     <link rel="stylesheet" href="css/light.css">
-    
-     <style type="text/css">
-        * { margin: 0; padding: 0; }
-        .clear { clear: both; }
-        #page-wrap { width: 800px; margin: 40px auto 60px; }
-        #pic { float: right; margin: -30px 0 0 0; }
-        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
-        h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
-        h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
-        p { margin: 0 0 16px 0; }
-        ul { margin: 0 0 32px 17px; }
-        #objective { width: 500px; float: left; }
-        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
-        dd { width: 600px; float: right; }
-        dd.clear { float: none; margin: 0; height: 15px; }
-     </style>
+    <link rel="stylesheet" href="css/light.css">
+
+    <style type="text/css">
+        .button {
+            border: none;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            background-color: #e7e7e7; color: black;
+        }
+
+        .bt-black {
+            background-color: #000000; color: white;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        #page-wrap {
+            width: 800px;
+            margin: 40px auto 60px;
+        }
+
+        #pic {
+            float: right;
+            margin: -30px 0 0 0;
+        }
+
+        h1 {
+            margin: 0 0 16px 0;
+            padding: 0 0 16px 0;
+            font-size: 42px;
+            font-weight: bold;
+            letter-spacing: -2px;
+            border-bottom: 1px solid #999;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin: 0 0 6px 0;
+            position: relative;
+        }
+
+        h2 span {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-style: italic;
+            font-family: Georgia, Serif;
+            font-size: 16px;
+            color: #999;
+            font-weight: normal;
+        }
+
+        p {
+            margin: 0 0 16px 0;
+        }
+
+        ul {
+            margin: 0 0 32px 17px;
+        }
+
+        #objective {
+            width: 500px;
+            float: left;
+        }
+
+        dt {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: right;
+            padding: 0 26px 0 0;
+            width: 150px;
+            float: left;
+            height: 100px;
+            border-right: 1px solid #999;
+        }
+
+        dd {
+            width: 600px;
+            float: right;
+        }
+
+        dd.clear {
+            float: none;
+            margin: 0;
+            height: 15px;
+        }
+
+        @media print {
+            #ld-toggle {
+                display: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div style="text-align: right;"><button onclick="getParameter()" id="ld-toggle">&#9818; Dark Mode</button></div>
+    <div style="text-align: right;"><button onclick="getParameter()" id="ld-toggle" class="button bt-black">&#9818; Dark Mode</button></div>
     <div id="page-wrap">
-    
-        <img src="images/sankar_tilted.png" alt="Photo of Cthulu" id="pic" width="25%"/>
-    
+
+        <img src="images/sankar_tilted.png" alt="Photo of Cthulu" id="pic" width="25%" />
+
         <div id="contact-info" class="vcard">
-        
+
             <!-- Microformats! -->
-        
+
             <h1 class="fn">Sankar Hari</h1>
-        
+
             <p>
                 Cell: <span class="tel">+91 8124743363</span><br />
                 Email: <a class="email" href="mailto:sankar.hari@outlook.com">sankar.hari@outlook.com</a>
             </p>
         </div>
-                
+
         <div id="objective">
             <p>
-                I am an outgoing and energetic (ask anybody) young professional, seeking a 
-                career that fits my professional skills, personality, and murderous tendencies. 
-                My squid-like head is a masterful problem solver and inspires fear in who gaze upon it. 
-                I can bring world domination to your organization. 
+                I am an outgoing and energetic (ask anybody) young professional, seeking a
+                career that fits my professional skills, personality, and murderous tendencies.
+                My squid-like head is a masterful problem solver and inspires fear in who gaze upon it.
+                I can bring world domination to your organization.
             </p>
         </div>
-        
+
         <div class="clear"></div>
-        
+
         <dl>
             <dd class="clear"></dd>
-            
+
             <dt>Experience</dt>
             <dd>
                 <h2>Team Lead<span>Mar 2019 - Present</span></h2>
                 <p><a href="https://www.bizappln.com/" target="_blank"><strong>LGT Technologies Pvt Ltd</strong></a>
-                    <ul>
-                        <li>Lead a team of 5 software developers programming applications according to clients requirment</li>
-                        <li>Assigned coding tasks to various team members</li> 
-                        <li>Regularly monitored work and cut </li>
-                    </ul>
+                <ul>
+                    <li>Lead a team of 5 software developers programming applications according to clients requirment
+                    </li>
+                    <li>Assigned coding tasks to various team members</li>
+                    <li>Regularly monitored work and cut </li>
+                </ul>
                 </p>
-                
+
             </dd>
             <dd>
                 <h2>Software Developer<span>Jun 2018 - Mar 2019</span></h2>
                 <p><a href="https://www.bizappln.com/" target="_blank"><strong>LGT Technologies Pvt Ltd</strong></a>
-                    <ul>
-                        <li>Inspired and won highest peasant death competition among servants</li>
-                        <li>Helped coordinate managers to grow cult following</li>
-                        <li>Provided untimely deaths to all who opposed</li>
-                    </ul>
+                <ul>
+                    <li>Inspired and won highest peasant death competition among servants</li>
+                    <li>Helped coordinate managers to grow cult following</li>
+                    <li>Provided untimely deaths to all who opposed</li>
+                </ul>
                 </p>
-                
+
             </dd>
 
             <dd class="clear"></dd>
-            
+
             <dt>Education</dt>
             <dd>
                 <h2>M.Tech Computer Science <span>2016-2018</span></h2>
@@ -94,20 +183,25 @@
                 <h2>B.E. Computer Science <span>2012-2016</span></h2>
                 <p>SMK Fomra Institute of Technology<br />Chennai, Tamil Nadu</p>
             </dd>
-            
+
             <dd class="clear"></dd>
-            
+
             <dt>Skills</dt>
             <dd>
                 <h2>Office skills</h2>
-                <p>Office and records management, database administration, event organization, customer support, travel coordination</p>
-                
+                <p>Office and records management, database administration, event organization, customer support, travel
+                    coordination</p>
+
                 <h2>Development skills</h2>
                 <ul>
-                    <li><strong>Programming Language: </strong> PHP, Python, Zoho Deluge, JavaScript, SQL, HTML, CSS, Shell Scripting</li>
+                    <li><strong>Programming Language: </strong> PHP, Python, Zoho Deluge, JavaScript, SQL, HTML, CSS,
+                        Shell Scripting</li>
                     <li><strong>Frameworks: </strong> Laravel, Lumen, Django, Flask</li>
-                    <li><strong>IaaS: </strong> AWS (EC2, EBS, Elastic IP, S3, Route 53, AMI, Cloud Watch, Lightsail)</li>
-                    <li><strong>SaaS: </strong> Zoho (Creator, CRM, Books, Inventory, Flow, Analytics, Workdrive), BigCommerce, Amazon MWS, Stripe, Avalara, GitHub, SendGrid, Fedex, PayPal, Shopify, SKUVault, Klaviyo</li>
+                    <li><strong>IaaS: </strong> AWS (EC2, EBS, Elastic IP, S3, Route 53, AMI, Cloud Watch, Lightsail)
+                    </li>
+                    <li><strong>SaaS: </strong> Zoho (Creator, CRM, Books, Inventory, Flow, Analytics, Workdrive),
+                        BigCommerce, Amazon MWS, Stripe, Avalara, GitHub, SendGrid, Fedex, PayPal, Shopify, SKUVault,
+                        Klaviyo</li>
                     <li><strong>Verson Control: </strong> Git</li>
                     <li><strong>Operating System: </strong> Linux, Windows</li>
                 </ul>
@@ -115,67 +209,76 @@
                 <h2>Laguage</h2>
                 <p>English, Tamil</p>
             </dd>
-            
+
             <dd class="clear"></dd>
-            
+
             <dt>Certification</dt>
             <dd>
                 <h2>Machine Learning with Python: Zero to GBMs <span>Jun 2022</span></h2>
-                <p><a href="https://jovian.ai/certificate/MFQTOMJVHA" target="_blank">https://jovian.ai/certificate/MFQTOMJVHA</a></p>
-                
+                <p><a href="https://jovian.ai/certificate/MFQTOMJVHA"
+                        target="_blank">https://jovian.ai/certificate/MFQTOMJVHA</a></p>
+
                 <h2>Data Analysis with Python: Zero to Pandas <span>Apr 2022</span></h2>
-                <p><a href="https://jovian.ai/certificate/MFQTMOJVHA" target="_blank">https://jovian.ai/certificate/MFQTMOJVHA</a></p>
-                
+                <p><a href="https://jovian.ai/certificate/MFQTMOJVHA"
+                        target="_blank">https://jovian.ai/certificate/MFQTMOJVHA</a></p>
+
                 <h2>Zoho Creator Developer - Associate <span>Mar 2020 - Mar 2022</span></h2>
                 <p><strong>Certificate ID:</strong> CCD0554</p>
             </dd>
-            
+
             <dd class="clear"></dd>
-            
+
             <dt>Publications</dt>
             <dd>
-                <h2>Intelligent Sentiment Analysis Approach Using Edge Computing-based Deep Learning Technique <span>Mar 2019</span></h2>
-                <p>Software: Practice and Experience<br /><a href="https://onlinelibrary.wiley.com/doi/epdf/10.1002/spe.2687" target="_blank">https://onlinelibrary.wiley.com/doi/epdf/10.1002/spe.2687</a></p>
-                
-                <h2>Investigating sentiment analysis using machine learning approach <span>Dec 2017</span></h2>
-                <p>2017 International Conference on Intelligent Sustainable Systems (ICISS), IEEE Xplore Compliant<br /><a href="https://ieeexplore.ieee.org/document/8389293/" target="_blank">https://ieeexplore.ieee.org/document/8389293/</a></p>
+                <h2>Intelligent Sentiment Analysis Approach Using Edge Computing-based Deep Learning Technique <span>Mar
+                        2019</span></h2>
+                <p>Software: Practice and Experience<br /><a
+                        href="https://onlinelibrary.wiley.com/doi/epdf/10.1002/spe.2687"
+                        target="_blank">https://onlinelibrary.wiley.com/doi/epdf/10.1002/spe.2687</a></p>
 
-                <h2>Hybrid Sentiment Classification of Reviews Using Synonym Lexicon and Word embedding <span>Mar 2018</span></h2>
-                <p>International Journal of Pure and Applied Mathematics (IJPAM)<br /><a href="https://acadpubl.eu/hub/2018-119-12/articles/5/1212.pdf" target="_blank">https://acadpubl.eu/hub/2018-119-12/articles/5/1212.pdf</a></p>
+                <h2>Investigating sentiment analysis using machine learning approach <span>Dec 2017</span></h2>
+                <p>2017 International Conference on Intelligent Sustainable Systems (ICISS), IEEE Xplore
+                    Compliant<br /><a href="https://ieeexplore.ieee.org/document/8389293/"
+                        target="_blank">https://ieeexplore.ieee.org/document/8389293/</a></p>
+
+                <h2>Hybrid Sentiment Classification of Reviews Using Synonym Lexicon and Word embedding <span>Mar
+                        2018</span></h2>
+                <p>International Journal of Pure and Applied Mathematics (IJPAM)<br /><a
+                        href="https://acadpubl.eu/hub/2018-119-12/articles/5/1212.pdf"
+                        target="_blank">https://acadpubl.eu/hub/2018-119-12/articles/5/1212.pdf</a></p>
             </dd>
-            
+
             <dd class="clear"></dd>
-            
+
         </dl>
-        
+
         <div class="clear"></div>
-    
+
     </div>
 
     <script>
         getParameter = () => {
-      
+
             var sheets = document
                 .getElementsByTagName('link');
-            
+
             var ld_toggle = document.getElementById("ld-toggle");
 
-            if(sheets[0].href.includes("css/light.css"))
-            {
+            if (sheets[0].href.includes("css/light.css")) {
                 value = "css/dark.css"
-                toggle_link = "index.html"
+                toggle_class = "button"
                 toggle_value = "&#9812; Light Mode"
                 console.log("Called Dark Mode");
             }
-            else
-            {
+            else {
                 value = "css/light.css"
-                toggle_link = "index.html?mode=dark"
+                toggle_class = "button bt-black"
                 toggle_value = "&#9818; Dark Mode"
                 console.log("Called Light Mode");
             }
             ld_toggle.innerHTML = toggle_value;
             sheets[0].href = value;
+            ld_toggle.classList = toggle_class
         }
     </script>
 
