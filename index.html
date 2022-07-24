@@ -10,21 +10,6 @@
     <link rel="stylesheet" href="css/light.css">
 
     <style type="text/css">
-        .button {
-            border: none;
-            padding: 5px 10px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            background-color: #e7e7e7; color: black;
-        }
-
-        .bt-black {
-            background-color: #000000; color: white;
-        }
 
         * {
             margin: 0;
@@ -108,15 +93,80 @@
         }
 
         @media print {
-            #ld-toggle {
+            #hideOnPrint {
                 display: none;
             }
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 24px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked+.slider {
+            background-color: #000000;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px #000000;
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(20px);
+            -ms-transform: translateX(20px);
+            transform: translateX(20px);
+        }
+
+        /* Rounded sliders */
+        .slider.round {
+            border-radius: 24px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
         }
     </style>
 </head>
 
 <body>
-    <div style="text-align: right;"><button onclick="getParameter()" id="ld-toggle" class="button bt-black">&#9818; Dark Mode</button></div>
+    <div style="text-align: right;" id="hideOnPrint">
+        &#9818; <label class="switch">
+            <input type="checkbox" onclick="getParameter()" id="ld-toggle" checked>
+            <span class="slider round"></span>
+        </label> &#9812;
+    </div>
     <div id="page-wrap">
 
         <img src="images/sankar_tilted.png" alt="Photo of Cthulu" id="pic" width="25%" />
@@ -266,19 +316,15 @@
 
             if (sheets[0].href.includes("css/light.css")) {
                 value = "css/dark.css"
-                toggle_class = "button"
-                toggle_value = "&#9812; Light Mode"
-                console.log("Called Dark Mode");
+                flag = true
             }
             else {
                 value = "css/light.css"
-                toggle_class = "button bt-black"
-                toggle_value = "&#9818; Dark Mode"
-                console.log("Called Light Mode");
+                flag = false
             }
-            ld_toggle.innerHTML = toggle_value;
             sheets[0].href = value;
-            ld_toggle.classList = toggle_class
+            ld_toggle.setAttribute("checked",flag);
+            // ld_toggle.classList = toggle_class
         }
     </script>
 
