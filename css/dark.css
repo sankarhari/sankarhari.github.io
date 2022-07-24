@@ -1,0 +1,4 @@
+body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(images/noise.jpeg); background-color: black; color: white; }        
+        a { color: #999; text-decoration: none; border-bottom: 1px dotted white; }
+        a:hover { border-bottom-style: solid; color: white; }
+        #objective p { font-family: Georgia, Serif; font-style: italic; color: white; }
