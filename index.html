@@ -5,12 +5,11 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <title>Sankar Resume</title>
+    <title>Sankar H Resume</title>
 
     <link rel="stylesheet" href="css/light.css">
 
     <style type="text/css">
-
         * {
             margin: 0;
             padding: 0;
@@ -160,8 +159,8 @@
     </style>
 </head>
 
-<body>
-    <div style="text-align: right;" id="hideOnPrint">
+<body oncontextmenu="return false">
+    <div style="text-align: right; padding-top: 1px;" id="hideOnPrint">
         &#9818; <label class="switch">
             <input type="checkbox" onclick="getParameter()" id="ld-toggle" checked>
             <span class="slider round"></span>
@@ -175,7 +174,7 @@
 
             <!-- Microformats! -->
 
-            <h1 class="fn">Sankar Hari</h1>
+            <h1 class="fn">Sankar H</h1>
 
             <p>
                 Cell: <span class="tel">+91 8124743363</span><br />
@@ -323,8 +322,26 @@
                 flag = false
             }
             sheets[0].href = value;
-            ld_toggle.setAttribute("checked",flag);
+            ld_toggle.setAttribute("checked", flag);
             // ld_toggle.classList = toggle_class
+        }
+
+        document.onkeydown = function (e) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+            }
         }
     </script>
 
