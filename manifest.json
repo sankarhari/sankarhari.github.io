@@ -2,7 +2,7 @@
     "short_name": "Sankar Resume",
     "name": "Sankar Resume",
     "start_url": "/",
-    "background_color": "#232c2a",
+    "background_color": "#FFF",
     "description": "This is my resume for job interviews.",
     "display": "standalone",
     "orientation": "portrait-primary",
