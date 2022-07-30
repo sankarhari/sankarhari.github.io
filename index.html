@@ -117,6 +117,12 @@
             align-items: center;
         }
 
+        @media print {
+                .float {
+                    display: none;
+                }
+        }
+
         a.float:hover {
             color: rgb(255, 255, 255);
         }
@@ -259,8 +265,17 @@
                 </p>
             </dd>
             <dd>
-                <h2>Loyalty Management System <span>2018-2019</span></h2>
-                <p></p>
+                <h2>Sales Forcasting Application<span>2018-2019</span></h2>
+                <p>
+                    <b>Role: </b><i>Software Developer</i>
+                    <ul>
+                        <li>Created Zoho Creator forms to store Vendor, Product, Sales Transaction and Delivery Notes.</li>
+                        <li>Developed custom Replenishment, Sales Forcasting and Inventory Reports using Zoho Creator Page. Sales forcating will suggest quantity of each project to be purased considering forcast and stock in hand, which help client to fulfill the upcomming order without emptying the inventory.</li>
+                        <li>Automated the Purchase Order creation in Zoho Books based on sales forcast suggestions.</li>
+                        <li>Developed a PHP schedule script download Delivery Note CSV files from FTP server of the Warehouse and syncing to Zoho Creator.</li>
+                        <li>Developed a Zoho Deluge script to sync sale transactions from SKUVault periorically using schedule.</li>
+                    </ul>
+                </p>
             </dd>
 
             <dd class="clear"></dd>
